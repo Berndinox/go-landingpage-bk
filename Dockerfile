@@ -1,4 +1,4 @@
 FROM pierrezemb/gostatic
 COPY index.html /srv/http
 USER appuser
-ENTRYPOINT ["/goStatic"]
+ENTRYPOINT ["/goStatic --forceHTTP"]
