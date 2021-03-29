@@ -1,4 +1,2 @@
-FROM pierrezemb/gostatic
-COPY index.html /srv/http
-USER appuser
-ENTRYPOINT ["/goStatic --forceHTTP"]
+FROM nginx:alpine
+COPY ./index.html /usr/share/nginx/html/index.html
